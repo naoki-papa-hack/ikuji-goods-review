@@ -169,6 +169,52 @@ h3 {
     border: 1px solid var(--border-glass);
 }
 
+.criteria-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.criteria-item {
+    background: rgba(0, 0, 0, 0.2);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+}
+
+.criteria-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.criteria-icon {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.criteria-header h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+.criteria-item p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-left: 28px;
+    /* アイコンの分だけ下げる */
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .criteria-item p {
+        margin-left: 0;
+        margin-top: 4px;
+    }
+}
+
 .about-preview {
     padding: var(--spacing-xl) 0;
 }
@@ -193,7 +239,7 @@ h3 {
         text-align: left;
         justify-content: space-between;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr 1fr;
     }
