@@ -125,6 +125,80 @@ h3 {
     margin-bottom: var(--spacing-sm);
 }
 
+/* About Page Specific */
+.about-grid {
+    display: grid;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.mission-statement {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-left: 4px solid var(--text-accent);
+    padding-left: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.logical-list {
+    list-style: none;
+    padding: var(--spacing-md);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius-md);
+}
+
+.logical-list li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.interests-grid {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.interest-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-card);
+    padding: 8px 16px;
+    border-radius: 99px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-glass);
+}
+
+.about-preview {
+    padding: var(--spacing-xl) 0;
+}
+
+.about-card-banner {
+    background: var(--bg-glass);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+    .about-card-banner {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .site-subtitle {
     font-family: var(--font-mono);
     font-size: 0.9rem;
