@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://naoki-papa-hack.github.io/ikuji-goods-review/sitemap.xml
