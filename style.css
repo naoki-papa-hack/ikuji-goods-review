@@ -1016,4 +1016,243 @@ html {
         border-left: none;
         border-right: none;
     }
+}/* Reports Section & Grid */
+.reports-section {
+    padding: 60px 0;
+    background: var(--bg-dark);
 }
+
+.section-header-compact {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.section-header-compact h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    color: var(--text-white);
+    margin-top: 10px;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.mini-banner {
+    min-height: 250px !important;
+    margin-bottom: 0 !important;
+}
+
+.mini-banner .banner-main-copy {
+    font-size: 1.4rem !important;
+    max-width: 100% !important;
+}
+
+@media (max-width: 768px) {
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Responsive Images for Technical Analysis */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-glass);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* アフィリエイトボタン用スタイル */
+.purchase-links {
+    margin: 3rem 0 2rem;
+    text-align: center;
+    background-color: #f8f9fa; /* 薄いグレーの背景で強調 */
+    padding: 2rem;
+    border-radius: 12px;
+}
+.purchase-lead {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* スマホで縦並びになるように */
+}
+
+.affiliate-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2.5rem;
+    border-radius: 50px; /* 丸みのあるデザイン */
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.affiliate-button span {
+    margin-right: 0.5rem;
+}
+
+.affiliate-button:hover {
+    transform: translateY(-3px); /* ホバー時に少し浮き上がる */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.rakuten {
+    background: linear-gradient(to right, #bf0000, #e60000); /* 楽天カラー（赤） */
+}
+
+.amazon {
+    background: linear-gradient(to right, #ff9900, #ffad33); /* Amazonカラー（オレンジ） */
+}
+
+.micro-copy {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+/* スマホ向け調整 */
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column; /* 縦並びに変更 */
+        gap: 1rem;
+    }
+
+    .affiliate-button {
+        width: 80%; /* 幅を広げて押しやすく */
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}
+
+
+.product-image-box {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.product-image-box img {
+    border-radius: 8px; /* 角を少し丸くしてリッチに */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+/* ステマ規制対策：PR表記用スタイル */
+.pr-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-glass);
+}
+
+
+/* Report Cards Layout */
+.report-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+}
+
+.report-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #000;
+    position: relative;
+    border-bottom: 1px solid var(--border-glass);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.report-card:hover .card-image {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.card-content {
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-tag {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    display: block;
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.4;
+}
+
+.card-excerpt {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+}
+
+.card-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.card-footer span {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.report-card:hover .card-footer span {
+    transform: translateX(5px);
+}
+
