@@ -1281,3 +1281,35 @@ html {
 .report-card:hover .card-footer span {
     transform: translateX(5px);
 }
+/* 新着バッジのスタイル */
+.card-image-wrapper {
+    position: relative; /* バッジの基準点 */
+}
+
+.new-report-badge {
+    position: absolute;
+    top: 10px; /* 枠の少し内側に配置 */
+    left: 10px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* 目立つ赤系のグラデーション */
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(255, 75, 43, 0.4); /* 立体感を出す影 */
+    z-index: 10; /* 画像より前面に表示 */
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* スマホでの微調整 */
+@media (max-width: 768px) {
+    .new-report-badge {
+        top: 8px;
+        left: 8px;
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
