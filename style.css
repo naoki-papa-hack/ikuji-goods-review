@@ -1170,6 +1170,8 @@ html {
 }
 
 .product-image-box img {
+    max-width: 50%;
+    height: auto;
     border-radius: 8px;
     /* 角を少し丸くしてリッチに */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
