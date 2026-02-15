@@ -1060,14 +1060,25 @@ html {
 
 
 /* Responsive Images for Technical Analysis */
-.responsive-img {
+.review-image-container {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.review-image {
     max-width: 66%;
     height: auto;
     display: block;
-    margin: 30px auto;
+    margin: 0 auto 15px;
     border-radius: var(--radius-md);
     border: 1px solid var(--border-glass);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.image-annotation {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
 }
 
 
