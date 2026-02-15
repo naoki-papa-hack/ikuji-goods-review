@@ -1016,7 +1016,9 @@ html {
         border-left: none;
         border-right: none;
     }
-}/* Reports Section & Grid */
+}
+
+/* Reports Section & Grid */
 .reports-section {
     padding: 60px 0;
     background: var(--bg-dark);
@@ -1059,7 +1061,7 @@ html {
 
 /* Responsive Images for Technical Analysis */
 .responsive-img {
-    max-width: 100%;
+    max-width: 66%;
     height: auto;
     display: block;
     margin: 30px auto;
@@ -1073,10 +1075,12 @@ html {
 .purchase-links {
     margin: 3rem 0 2rem;
     text-align: center;
-    background-color: #f8f9fa; /* 薄いグレーの背景で強調 */
+    background-color: #f8f9fa;
+    /* 薄いグレーの背景で強調 */
     padding: 2rem;
     border-radius: 12px;
 }
+
 .purchase-lead {
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -1087,7 +1091,8 @@ html {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    flex-wrap: wrap; /* スマホで縦並びになるように */
+    flex-wrap: wrap;
+    /* スマホで縦並びになるように */
 }
 
 .affiliate-button {
@@ -1095,12 +1100,13 @@ html {
     align-items: center;
     justify-content: center;
     padding: 1rem 2.5rem;
-    border-radius: 50px; /* 丸みのあるデザイン */
+    border-radius: 50px;
+    /* 丸みのあるデザイン */
     font-weight: 700;
     text-decoration: none;
     color: white;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .affiliate-button span {
@@ -1108,16 +1114,19 @@ html {
 }
 
 .affiliate-button:hover {
-    transform: translateY(-3px); /* ホバー時に少し浮き上がる */
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+    /* ホバー時に少し浮き上がる */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .rakuten {
-    background: linear-gradient(to right, #bf0000, #e60000); /* 楽天カラー（赤） */
+    background: linear-gradient(to right, #bf0000, #e60000);
+    /* 楽天カラー（赤） */
 }
 
 .amazon {
-    background: linear-gradient(to right, #ff9900, #ffad33); /* Amazonカラー（オレンジ） */
+    background: linear-gradient(to right, #ff9900, #ffad33);
+    /* Amazonカラー（オレンジ） */
 }
 
 .micro-copy {
@@ -1129,12 +1138,14 @@ html {
 /* スマホ向け調整 */
 @media (max-width: 768px) {
     .button-group {
-        flex-direction: column; /* 縦並びに変更 */
+        flex-direction: column;
+        /* 縦並びに変更 */
         gap: 1rem;
     }
 
     .affiliate-button {
-        width: 80%; /* 幅を広げて押しやすく */
+        width: 80%;
+        /* 幅を広げて押しやすく */
         padding: 1rem;
         margin: 0 auto;
     }
@@ -1146,9 +1157,11 @@ html {
     display: flex;
     justify-content: center;
 }
+
 .product-image-box img {
-    border-radius: 8px; /* 角を少し丸くしてリッチに */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    /* 角を少し丸くしてリッチに */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1255,4 +1268,3 @@ html {
 .report-card:hover .card-footer span {
     transform: translateX(5px);
 }
-
