@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X2EFER6FY"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -16,8 +15,6 @@
     <meta name="google-site-verification" content="j6ddsaW3riWKzwJlxs7hgD-mxtXLbq-_qnyzR0Rqcfo" />
     <title>理系パパのロジカル育児ハック｜化学修士が選ぶ「最適解」</title>
     <meta name="description" content="化学修士の理系パパが、育児グッズを成分・構造・コストから徹底分析。メーカーの忖度なしに「数値的根拠」で選んだ最適解だけをロジカルに紹介します。">
-    <meta name="keywords"
-        content="おむつゴミ箱 比較, 臭わない 理由, コスパ最強, 化学修士 レビュー, ピジョン, Pigeon, コンビ, Combi, アップリカ, Aprica, Ubbi, Diaper Pail, Baby Gear Review, 理系パパ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,10 +22,38 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mobile Fluid Typography & Layout */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px !important;
+            }
+
+            .site-title {
+                font-size: clamp(1.8rem, 8vw, 3.5rem) !important;
+            }
+
+            .site-subtitle {
+                font-size: 0.85rem !important;
+            }
+
+            .hero-copy h2 {
+                font-size: clamp(1.5rem, 6vw, 2.5rem) !important;
+            }
+
+            .reports-grid {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+
+            .card-title {
+                font-size: 1.1rem !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Hero Section -->
     <header class="hero-section">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
@@ -47,7 +72,6 @@
     </header>
 
     <main>
-        <!-- Reports Section -->
         <section class="reports-section">
             <div class="container">
                 <div class="section-header-compact">
@@ -56,12 +80,31 @@
                 </div>
 
                 <div class="reports-grid">
-                    <!-- Analysis Report 02 (New) -->
+
+                    <article>
+                        <a href="report03.html" class="report-card">
+                            <div class="card-image-wrapper">
+                                <img src="20260301/0.jpg" alt="住所スタンプ導入のROI analysis" class="card-image" loading="lazy">
+                                <span class="new-report-badge">NEW</span>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-tag">[ANALYSIS REPORT 03]</span>
+                                <h3 class="card-title">【業務改善】保育園・病院の「無限住所書き」を撲滅せよ。ROI最強の住所印導入プロセス</h3>
+                                <p class="card-excerpt">
+                                    予防接種や保育園書類の「手書き」を時給換算で評価。数千円の投資で3時間の自由時間を生み出し、ヒューマンエラーをゼロにする最強の育児デバイスを徹底解説。
+                                </p>
+                                <div class="card-footer">
+                                    VIEW REPORT <span>&rarr;</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
                     <article>
                         <a href="report02.html" class="report-card">
                             <div class="card-image-wrapper">
-                                <span class="new-report-badge">NEW ANALYSIS</span>
-                                <img src="20260215/dacco_comparison_table.jpg" alt="妊婦用着圧ソックス 比較解析" class="card-image">
+                                <img src="20260215/dacco_comparison_table.jpg" alt="妊婦用着圧ソックス 比較解析" class="card-image"
+                                    loading="lazy">
                             </div>
                             <div class="card-content">
                                 <span class="card-tag">[ANALYSIS REPORT 02]</span>
@@ -76,11 +119,11 @@
                         </a>
                     </article>
 
-                    <!-- Analysis Report 01 (Existing) -->
                     <article>
                         <a href="report.html" class="report-card">
                             <div class="card-image-wrapper">
-                                <img src="images/comparison_table.jpg" alt="おむつ用ゴミ箱 比較解析" class="card-image">
+                                <img src="images/comparison_table.jpg" alt="おむつ用ゴミ箱 比較解析" class="card-image"
+                                    loading="lazy">
                             </div>
                             <div class="card-content">
                                 <span class="card-tag">[ANALYSIS REPORT 01]</span>
@@ -94,11 +137,11 @@
                             </div>
                         </a>
                     </article>
+
                 </div>
             </div>
         </section>
 
-        <!-- About Link Section -->
         <section class="about-preview">
             <div class="container">
                 <div class="about-card-banner">
